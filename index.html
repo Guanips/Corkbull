@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Corkbull</title>
+</head>
+<body>
+
+    <header>
+        <div class="titleItems">
+            <h1>Corkbull</h1>
+            <h2>¡Como una tabla de corcho virtual!</h2>
+        </div>
+    </header>
+
+    <section id="comments">
+        <!-- 
+        <div class="commentCard">
+            <p class="commentCardText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p>
+            <p class="commentCardName">Lorem ipsum dolor sit ame</p>
+            <div class="voting">
+                <button class="voteButton" id="downvote"><box-icon name='downvote'></box-icon></button>
+                <p class="voteCount">0</p>
+                <button class="voteButton" id="upvote"><box-icon name='upvote'></box-icon></button>
+            </div>
+        </div>
+<div class="commentCard"> <p class="commentCardText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis p</p> <p class="commentCardName">Lorem ipsum dolor sit ame</p> <div class="voting"> <button class="voteButton" id="downvote"><box-icon name='downvote'></box-icon></button> <p class="voteCount">0</p> <button class="voteButton" id="upvote"><box-icon name='upvote'></box-icon></button> </div>
+        </div>
+         -->
+        <form class="commentCreator">
+            <label for="commentBox" class="commentBoxTitle">¿Cual va a ser tu mensaje? <br>(Max 150 caracteres)</label>
+            <div class="commentBoxContainer">
+                <textarea name="Comment" id="commentBox" cols="30" rows="10" maxlength="150" class="generalInputStyle"></textarea>
+            </div>
+
+            <label for="commentName" class="commentNameTitle">¿Tu nombre?</label>
+            <input type="text" id="commentName" class="generalInputStyle" maxlength="25">
+
+            <button id="commentPublish" type="button" onclick="addComment()">Fijar en la tabla</button>
+        </form>
+    </section>
+
+    <script src="/JS/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
